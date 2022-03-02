@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+@keyframes slidein {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.empha {
+    display: inline-block;
+    color: #04AD8B;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.circle_cont {
+    display: flex;
+    gap: 3px;
+    .circle_item {
+        margin-top: 2px;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #04AD8B;
+        &.on {
+            background-color: #A9E0D5;
+        }
+    }
+}
+.next-btn {
+    border: none;
+    background-color: #F4FFFC;
+    position: relative;
+    img {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: -110px;
+        width: 70px;
+        animation:  .5s linear 1s infinite alternate slidein;
+    }
+}
