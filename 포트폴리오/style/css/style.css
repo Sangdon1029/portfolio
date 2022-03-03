@@ -73,6 +73,12 @@
   src: url("../font/establish Retrosans.otf");
 }
 
+@font-face {
+  font-family: 'Gmarket', sans-serif;
+  font-weight: 400;
+  src: url("../font/GmarketSansBold.otf");
+}
+
 .main-page_header {
   width: 30%;
   height: 100vh;
@@ -139,10 +145,43 @@
   background-color: #04AD8B;
 }
 
+.main-page_header .list_cont button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: -100px;
+  text-align: left;
+  font-family: 'Gmarket';
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+
+.main-page_header .list_cont button.on {
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+  margin-left: 50px;
+  color: #04AD8B;
+}
+
+.main-page_header .list_cont button::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+  height: 5px;
+  top: 50%;
+  left: -300px;
+  background-color: #04AD8B;
+}
+
 .main-page_main {
-  width: 80%;
+  width: 70vw;
   height: 100vh;
   background-color: #F4FFFC;
+  border: 1px solid transparent;
 }
 
 .main-page_main .list_cont .list_header {
@@ -255,6 +294,18 @@
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+}
+
+#cssCont {
+  display: none;
+}
+
+#javascriptCont {
+  display: none;
+}
+
+#reactCont {
+  display: none;
 }
 
 body {
