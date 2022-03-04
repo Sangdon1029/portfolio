@@ -19,6 +19,47 @@
                 border-radius: 40px;
                 width: 120px;
             }
+            
+        }
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                text-align: center;
+                font-size: 46px;
+                color: $projtit;
+                margin-top: 70px;
+            }
+            .project-list-cont{
+                display: flex;
+                padding: 0 4%;
+                gap: 10px;
+                .project-tit {
+                    margin-top: 90px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 20px;
+                    .pj-img-cont {
+                        display: flex;
+                        border: 1px solid red;
+                        img {
+                            width: 230px;
+                            height: 320px;
+                            border-radius: 2px;
+                            box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+                        }
+                    }
+                    img {
+                        width: 230px;
+                        border-radius: 2px;
+                        box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+                    }
+                    .project-disc{
+                        width: 300px;
+                    }
+                }
+            }
         }
         .list_item  {
             margin-left: 50px;
