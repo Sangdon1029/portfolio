@@ -71,6 +71,7 @@ small {
     height: 220px;
     background-color: aliceblue;
     overflow: hidden;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.2);
 }
 
 .header-cont {
@@ -215,6 +216,11 @@ article ul {
     background-color: aliceblue;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.item-cont .item-text-cont .item-text.third {
+    margin-top: 60px;
 }
 .item-cont .item-text-cont .item-text.move {
     margin-top: 50px;
@@ -260,4 +266,27 @@ article ul {
     background-color: transparent;
     border: none;
     text-align: right;
+}
+.altText {
+    display: none;
+}
+@media screen and (max-width:1000px) {
+    header {
+        display: none;
+    }
+    main {
+        display: none;
+    }
+    .altText{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+    }
 }
